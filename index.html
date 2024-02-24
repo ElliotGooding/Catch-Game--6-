@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Catch Game</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/images/blackhole.png">
+</head>
+
+<body>
+    <div id="game-container">
+        <div class="start-screen">
+            <h1 id="title">Catch Game</h1>
+            <div class="menu">
+                <button class="start-game" id="start-game">Start Game</button>
+                <div class="divider" id="start-screen-divider"></div>
+                <div class="object-selector">
+                    <h2 class="object-selector-title">Select your object to catch!</h2>
+                    <img src="assets/images/alien.png" class="object-selector-icon aliens-selector selected">
+                    <img src="/assets/images/astronaut.png" class="object-selector-icon astronauts-selector">
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control-text">Controls</div>
+                <img src="assets/images/left.png" class="control-image">
+                <img src="assets/images/right.png" class="control-image">
+            </div>
+        </div>
+        <div class="game-over-screen">
+            <h1 id="game-over-title">Game Over</h1>
+            <div class="scoreboard"></div>
+            <input type="text" id="name-input" class="score-row" placeholder="Enter name"  autocomplete="off">
+            <button class="submit-name" id="submit-name">Submit</button>
+            <button class="restart-game-button" id="restart-game-button">Play Again?</button>
+        </div>
+    </div>
+    <script src="scripts/maths.js"></script>
+    <script src="scripts/falling-object.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/star.js"></script>
+    <script src="scripts/shooting-star.js"></script>
+    <script src="scripts/background.js"></script>
+    <script src="scripts/menu-screen.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/game-over-screen.js"></script>
+</body>
+
+</html>
